@@ -1,5 +1,5 @@
 <?php
-$maxPrice = 1194;
+$maxPrice = 3400;
 $minPrice = 0;
 
 $linkSta = "https://csfloat.com/search?sort_by=lowest_price&min_float=0.001&max_float=0.38"; // lowest price
@@ -19,7 +19,7 @@ for ($i = 1; $i < 34; $i++) {
         $brabo[] = $i;
         continue;
     }
-    if ($i == 1 || $i == 6 || $i == 8 || $i == 10 || $i == 12 || $i == 15 || $i == 17 || $i == 19 || $i == 22 || $i == 26 || $i == 27 || $i == 32) {
+    if ($i == 1 || $i == 6 || $i == 8 || $i == 10 || $i == 12 || $i == 15 || $i == 17 || $i == 19 || $i == 22 || $i == 25 || $i == 26 || $i == 27 || $i == 32 || $i == 33) {
         $trash[] = $i;
         continue;
     }
