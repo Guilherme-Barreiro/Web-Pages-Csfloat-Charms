@@ -9,7 +9,7 @@ $linkBase = "https://csfloat.com/search?sort_by=most_recent&min_float=0.001&max_
 $linkMid = "&type=buy_now&keychains=%5B%7B%22i%22:";
 $linkEnd = "%7D%5D";
 
-$expensive = [7, 9, 11, 13, 16, 18, 20, 21, 24, 29, 30];                    //   3 < 
+$expensive = [9, 13, 18, 20, 24, 11, 29, 30, 7, 16, 21];                    //   3 < 
 $bons = [2, 3, 5, 14, 31];                                                  // 1.5 <  < 3
 $trash = [1, 4, 6, 8, 10, 12, 15, 17, 19, 22, 23, 25, 26, 27, 28, 32, 33];  //     < 1.5
 
