@@ -1,5 +1,5 @@
 <?php
-$maxPrice = 9990000;
+$maxPrice = 2000; // last checked prices on 26/10 16:00
 $minPrice = 0;
 $linkBase = "https://csfloat.com/search?sort_by=most_recent&min_float=0.001&max_float=0.38";
 
