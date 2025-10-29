@@ -20,7 +20,7 @@ function gerarLinks($ids, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd)
     return $links;
 }
 
-$expensiveLinks = gerarLinks($expensive, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
+$expensiveLinks = gerarLinks($expensive, $linkBase, $minPrice, $maxPrice + 3000, $linkMid, $linkEnd);
 $bonsLinks = gerarLinks($bons, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
 $trashLinks = gerarLinks($trash, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
 $majorLinks = gerarLinks($major, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
