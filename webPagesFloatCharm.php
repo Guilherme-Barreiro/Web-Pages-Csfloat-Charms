@@ -1,7 +1,8 @@
 <?php
-$maxPrice = 2000; // last checked prices on 26/10 16:00
+$maxPrice = 2000; // last checked prices on 04/11 16:00
 $minPrice = 0;
 $linkBase = "https://csfloat.com/search?sort_by=most_recent&min_float=0.001&max_float=0.38";
+$linkBaseNormal = "https://csfloat.com/search?category=1&sort_by=most_recent&min_float=0.001&max_float=0.38";
 
 $linkMid = "&type=buy_now&keychains=%5B%7B%22i%22:";
 $linkEnd = "%7D%5D";
@@ -23,7 +24,7 @@ function gerarLinks($ids, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd)
 $expensiveLinks = gerarLinks($expensive, $linkBase, $minPrice, $maxPrice + 3000, $linkMid, $linkEnd);
 $bonsLinks = gerarLinks($bons, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
 $trashLinks = gerarLinks($trash, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
-$majorLinks = gerarLinks($major, $linkBase, $minPrice, $maxPrice, $linkMid, $linkEnd);
+$majorLinks = gerarLinks($major, $linkBaseNormal, $minPrice, $maxPrice, $linkMid, $linkEnd);
 
 function extractIdFromUrl($url){
     preg_match('/"i":(\d+)/', urldecode($url), $matches);
